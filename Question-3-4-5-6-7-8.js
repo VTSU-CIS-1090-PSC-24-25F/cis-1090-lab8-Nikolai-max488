@@ -21,5 +21,18 @@ let myFish = {
 }
 
 //❓❓ LAB QUESTION 6, 7, 8:
-console.log("Speak, " + myCat.name );
-myCat.speak();
+function introduce(myPet){
+    console.log("My pets name is", myPet.name);
+    console.log("They are", myPet.age, "years old");
+    if (myPet.speak ){
+        console.log("Speak,", myPet.name,);
+        myPet.speak();
+    } else {
+        console.log("Sorry ", myPet.name, " doesn't speak");
+    }
+}
+
+introduce(myCat);
+introduce(myDog);
+introduce(myFish);
+myFish.speak()
